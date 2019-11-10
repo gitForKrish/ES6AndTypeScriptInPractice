@@ -52,6 +52,7 @@ var getValue6 = function (value, bonus) {
     if (bonus === void 0) { bonus = value * percentArr(); }
     // it is allowed to use function for default value calculation
     console.log(value + bonus);
+    console.log(arguments.length); // list down the actual parameters passed while function call
 };
 getValue6();
 getValue6(20);
