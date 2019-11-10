@@ -1,4 +1,5 @@
 "use strict";
+var _a;
 var firstName = "Morgan";
 var lastName = "Stanley";
 /* ES5: create object with existing variables */
@@ -56,4 +57,19 @@ console.log(person5.firstName);
 console.log(person5.lastName);
 console.log(person5.fullName);
 console.log(person5.isSenior());
+/* Object property can contain space */
+var person6 = {
+    "first name": "Jack"
+};
+console.log(person6["first name"]);
+/* Object property can be created from a variable */
+var ln = "last name";
+var person7 = (_a = {
+        "first name": "Jack"
+    },
+    _a[ln] = "els",
+    _a);
+console.log(person7["first name"]);
+console.log(person7["last name"]);
+console.log(person7);
 //# sourceMappingURL=09_objectLiterals.js.map

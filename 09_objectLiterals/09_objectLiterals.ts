@@ -64,3 +64,19 @@ console.log(person5.firstName);
 console.log(person5.lastName);
 console.log(person5.fullName);
 console.log(person5.isSenior());
+
+/* Object property can contain space */
+let person6 = {
+  "first name": "Jack"
+};
+console.log(person6["first name"]);
+
+/* Object property can be created from a variable */
+let ln = "last name";
+let person7 = {
+  "first name": "Jack",
+  [ln]: "els"
+};
+console.log(person7["first name"]);
+console.log(person7["last name"]);
+console.log(person7);
