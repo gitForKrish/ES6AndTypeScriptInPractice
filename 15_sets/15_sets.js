@@ -44,4 +44,4 @@ key = null; // making the object as null
 console.log(myset4.size);
 // though object reference is set to null, the actual actual object still persist in the Set
 console.log([...myset4][0]);
-
+// object still persist in Set...
